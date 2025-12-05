@@ -1,0 +1,163 @@
+/* Custom CSS untuk Portofolio Estetik */
+
+/* Font yang lebih modern */
+body {
+    font-family: 'Poppins', sans-serif; /* Ganti dengan font yang lebih menarik */
+    line-height: 1.6;
+}
+
+/* Import Font Poppins dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Style untuk Navbar (Membuatnya lebih rapi) */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+.nav-link {
+    font-weight: 500;
+    color: #f8f9fa !important; /* Warna link di navbar gelap */
+}
+
+/* Jumbotron/Hero Section */
+.hero-jumbotron {
+    /* Menggunakan background gelap/hitam untuk kesan profesional */
+    background: linear-gradient(rgba(3, 3, 3, 0.7), rgba(3, 3, 3, 0.7)), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 85vh; /* Mengambil sebagian besar tinggi layar */ 
+}
+
+/* Gambar Profil */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 5px solid white; /* Bingkai putih */
+    border-radius: 50%;
+}
+
+/* Judul Section */
+.section-title {
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 3px;
+    width: 50px;
+    background-color: #ffc107; /* Warna aksen kuning (warning) */
+    border-radius: 5px;
+}
+
+/* Bagian Projects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.card:hover {
+    transform: translateY(-5px); /* Efek hover mengangkat kartu */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.project-image {
+    height: 200px; /* Tinggi gambar yang seragam */
+    object-fit: cover;
+}
+
+/* Kontak Form */
+.form-control {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+}
+.bg-dark .form-control {
+    background-color: #343a40; /* Warna input di latar belakang gelap */
+    border-color: #495057;
+    color: white;
+}
+.bg-dark .form-control::placeholder {
+    color: #ced4da;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+}
+
+/* BACKGROUND GELAP UNTUK ABOUT ME */
+.about-section {
+    padding: 80px 0;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.about-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border: 1px solid #e8e8e8;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.icon-box {
+    font-size: 40px;
+    color: #0d6efd; /* warna biru bootstrap */
+    margin-bottom: 15px;
+}
+
+.about-card h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    color: #555;
+    font-size: 15px;
+}
+
+.projects-section {
+    padding: 80px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)),
+                url('background.jpg'); /* sama dengan hero/about */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Sesuaikan card agar tetap kontras */
+.projects-section .card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.projects-section .card,
+.projects-section .card * {
+    color: #ffffff !important;
+}
+
+.projects-section .btn {
+    border-color: rgba(255,255,255,0.5) !important;
+    color: #ffffff !important;
+}
+
+.projects-section .btn:hover {
+    background-color: rgba(255,255,255,0.2) !important;
+}
+
+
